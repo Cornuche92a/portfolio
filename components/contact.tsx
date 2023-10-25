@@ -29,14 +29,14 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>Contactez moi</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+        Vous pouvez mon contacter directement à{" "}
+        <a className="underline" href="mailto:anas.dev@icloud.com">
+          anas.dev@icloud.com
         </a>{" "}
-        or through this form.
+        ou utiliser le formulaire ci-dessous.
       </p>
 
       <form
@@ -49,7 +49,9 @@ export default function Contact() {
             return;
           }
 
-          toast.success("Email sent successfully!");
+          if(data) {
+              toast.success("Bien reçu !");
+          }
         }}
       >
         <input
@@ -58,12 +60,12 @@ export default function Contact() {
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder="Votre e-mail"
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          placeholder="Your message"
+          placeholder="Votre message"
           required
           maxLength={5000}
         />

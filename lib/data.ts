@@ -8,15 +8,15 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
-    name: "Home",
+    name: "Accueil",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "Moi",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "Projets",
     hash: "#projects",
   },
   {
@@ -24,7 +24,7 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Expérience",
     hash: "#experience",
   },
   {
@@ -35,73 +35,81 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Lycée Paul Lapie",
+    location: "Courbevoie",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Formation en Brevet de Technicien Supérieur en Développement Web.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2020 - 2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Développeur Full-Stack",
+    location: "Freelance",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Développement d'application, de fonctions et maintenance de code.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022 - Maintenant",
+  },
+  {
+    title: "E-commerce",
+    location: "Freelance",
+    description:
+      "Création et développement de boutiques Shopify, Wordpress et Prestashop.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2022 - Maintenant",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Plateforme SaaS ",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+        "Plateforme SaaS sur abonnement offrant un accès centralisé à une variété d'outils en ligne pour l'optimisation SEO, l'analyse de marché et le design.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux", "MongoDB"],
+    imageUrl: rmtdevImg,
+  },
+    {
+    title: "Crypto Marketplace",
+    description:
+      "Marketplace pour l'achat instantané de produits numériques via Bitcoin, avec support client intégré et gestion de wallet Bitcoin.",
+    tags: ["PHP", "Laravel", "Bitcoin Core", "Blockchain", "MySQL"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Plateforme SaaS",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Un service permettant de souscrire et de regrouper tous vos abonnements préférés à un prix avantageux, tout en offrant une gestion centralisée.",
+    tags: ["React", "Next.js", "NoSQL", "API", "OpenUI"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
   "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
+  "Next.js",
+  "PHP",
+  "HTML",
+  "API",
+  "Laravel",
+  "E-commerce",
+  "React.js",
+  "noSQL",
+  "SQL",
+  "Docker",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Typescript",
+  "JavaScript",
+  "AWS",
+  "Google Cloud",
+  "Azure",
+  "Shopify",
+  "Liquid",
+  "React",
+  "Shopify",
+  "Prestashop",
+  "Mongoose",
+  "Stripe",
+  "Git",
+  "Wordpress",
+  "AGILE"
 ] as const;
