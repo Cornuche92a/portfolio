@@ -67,6 +67,7 @@ export const projectsData = [
         "Plateforme SaaS sur abonnement offrant un accès centralisé à une variété d'outils en ligne pour l'optimisation SEO, l'analyse de marché et le design.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux", "MongoDB"],
     imageUrl: rmtdevImg,
+    githubUrl: "https://github.com/Cornuche92a/prelaunch-saas"
   },
     {
     title: "Crypto Marketplace",
@@ -74,13 +75,15 @@ export const projectsData = [
       "Marketplace pour l'achat instantané de produits numériques via Bitcoin, avec support client intégré et gestion de wallet Bitcoin.",
     tags: ["PHP", "Laravel", "Bitcoin Core", "Blockchain", "MySQL"],
     imageUrl: corpcommentImg,
-  },
+    githubUrl: "https://github.com/Cornuche92a/Bitcoin-Marketplace"
+    },
   {
     title: "Plateforme SaaS",
     description:
       "Un service permettant de souscrire et de regrouper tous vos abonnements préférés à un prix avantageux, tout en offrant une gestion centralisée.",
     tags: ["React", "Next.js", "NoSQL", "API", "OpenUI"],
     imageUrl: wordanalyticsImg,
+    githubUrl: "https://github.com/Cornuche92a/GeniusRanker/tree/master"
   },
 ] as const;
 
