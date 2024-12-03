@@ -1,6 +1,5 @@
-import { useTranslations } from "next-intl";
-const t = useTranslations();
-const linksObjects: { [key: string]: { hash: string; name: string } } =
-  t.raw("Links");
-const linksArray = Object.values(linksObjects); // Convert the object to an array
+// lib/types.ts
+import { useLinksTranslations } from "./hooks";
+
+const linksArray = useLinksTranslations();
 export type SectionName = (typeof linksArray)[number]["name"];
