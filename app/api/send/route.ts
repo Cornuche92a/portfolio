@@ -1,5 +1,5 @@
 import EmailTemplate from "@/email/contact-form-email";
-import { validateString, getErrorMessage } from "@/lib/utils";
+import { validateString } from "@/lib/utils";
 import { Resend } from "resend";
 import React from "react";
 
@@ -36,7 +36,7 @@ export async function POST(req: Request) {
 
     if (error) {
       return {
-        error: getErrorMessage(error),
+        throw: error,
       };
     }
     return new Response(JSON.stringify(data), {
