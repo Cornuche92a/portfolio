@@ -2,9 +2,9 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -22,7 +22,12 @@ const fadeInAnimationVariants = {
 
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
+  const t = useTranslations();
+  const skillsObjects: Record<string, string> = t.raw("Skills");
+  const skillsArray: (string | React.ReactNode)[] =
+    Object.values(skillsObjects);
 
+  console.log(skillsArray);
   return (
     <section
       id="skills"
@@ -31,10 +36,10 @@ export default function Skills() {
     >
       <SectionHeading>Mes Skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {skillsData.map((skill, index) => (
+        {skillsArray.map((skill, index) => (
           <motion.li
             className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
-            key={skill[index]}
+            key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"

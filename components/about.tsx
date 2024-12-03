@@ -4,9 +4,11 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { useTranslations } from "next-intl";
 
 export default function About() {
   const { ref } = useSectionInView("Moi");
+  const t = useTranslations("About");
 
   return (
     <motion.section
@@ -17,20 +19,18 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>À propos de moi</SectionHeading>
+      <SectionHeading>{t("title")}</SectionHeading>
       <p className="mb-1 ">
-        <span className="font-medium">Passionné de développement web</span> depuis l'enfance,
-        j'ai formalisé mon intérêt à travers un <span className="font-medium">BTS SIO (SLAM),</span>{" "}
-        enrichi par une exploration autodidacte continue. Ma pratique s'est affinée{" "}
-        sur des projets personnels et freelance, principalement autour de technologies{" "}
-        comme <span className="font-medium">React, Next.js, et Node.js.</span> Mon portfolio
-        reflétant mon parcours d'apprentissage, présente des solutions créatives à des problèmes
-        variés. Doté d'une <span className="underline">grande autonomie</span> et d'un{" "}
-        <span className="font-medium">esprit de collaboration.</span>  En dehors du code,
-        je m'investis dans des <span className="underline">communautés de développeurs en ligne,</span>
-        partageant des connaissances et restant à jour sur les dernières tendances technologiques.
+        {t("body.text1")}{" "}
+        <span className="font-medium">{t("body.text1b")}</span>
+        {t("body.text1bis")}{" "}
+        <span className="font-medium">{t("body.text2b")}</span>
+        {t("body.text3")}{" "}
+        <span className="font-medium">{t("body.text4b")}</span>
+        {t("body.text5")}{" "}
+        <span className="font-medium">{t("body.text6b")}</span>
+        {t("body.text7")}{" "}
       </p>
-
     </motion.section>
   );
 }

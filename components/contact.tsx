@@ -4,16 +4,18 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import Form from "next/form";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const t = useTranslations("Contact");
 
   return (
     <motion.section
-      id="contact"
+      id={"contact"}
       ref={ref}
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
       initial={{
@@ -29,28 +31,49 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contactez moi</SectionHeading>
+      <SectionHeading>{t("title")}</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Vous pouvez mon contacter directement à{" "}
+      <p className="text-gray-700 -mt-4 dark:text-white/80">
+        {t("desc")}
+        {" @ "}
         <a className="underline" href="mailto:anas.dev@icloud.com">
           anas.dev@icloud.com
         </a>{" "}
-        ou utiliser le formulaire ci-dessous.
+        <p className={"items-center mt-10 text-5xl"}>👇</p>
       </p>
 
-      <form
+      <Form
         className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+        action="/api/send"
+        onSubmit={async (event) => {
+          event.preventDefault();
 
-          if (error) {
-            toast.error(error);
-            return;
-          }
+          try {
+            const formData = new FormData(event.currentTarget);
 
-          if(data) {
+            const response = await fetch("/api/send", {
+              method: "POST",
+              body: formData,
+            });
+
+            let result;
+
+            try {
+              result = await response.json();
+            } catch {
+              // Gestion d'un éventuel problème avec le format JSON
+              result = { error: "Erreur lors du traitement de la réponse" };
+            }
+
+            if (response.ok) {
               toast.success("Bien reçu !");
+            } else {
+              toast.error(result.error || "Une erreur est survenue.");
+            }
+          } catch (error) {
+            // Gestion des erreurs réseau ou exceptions inattendues
+            console.error("Erreur lors de l'envoi :", error);
+            toast.error("Une erreur réseau est survenue. Veuillez réessayer.");
           }
         }}
       >
@@ -70,7 +93,7 @@ export default function Contact() {
           maxLength={5000}
         />
         <SubmitBtn />
-      </form>
+      </Form>
     </motion.section>
   );
 }

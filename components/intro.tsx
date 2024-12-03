@@ -9,10 +9,13 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Intro() {
   const { ref } = useSectionInView("Accueil", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const locale = useLocale();
+  const t = useTranslations("Intro");
 
   return (
     <section
@@ -31,8 +34,8 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://avatars.githubusercontent.com/u/111919185"
-              alt="Anas Corniche"
+              src="https://dam.malt.com/2d1cd16c-4508-4ad9-99cc-62c6898be89e?gravity=face&func=face&face_margin=70&w=440&h=440&force_format=webp"
+              alt="Anas"
               width="192"
               height="192"
               quality="95"
@@ -62,11 +65,15 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Anas.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">4 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js) & Node.js</span>.
+        <span className="font-bold">{t("title.text1")}</span> {t("title.text2")}{" "}
+        <span className="font-bold">{t("title.text3g")}</span>{" "}
+        {t("title.text4")}{" "}
+        <span className="font-bold">{t("title.text5g")}</span>{" "}
+        {t("title.text6")} <span className="italic">{t("title.text7g")}</span>{" "}
+        {t("title.text8")}{" "}
+        <span className="underline">{t("title.text9i")}</span>{" "}
+        {t("title.text10")}{" "}
+        <span className="underline">{t("title.text11i")}</span>.
       </motion.h1>
 
       <motion.div
@@ -85,16 +92,16 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contactez moi{" "}
+          {t("contact")}{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href={`/CV_${locale}.pdf`}
           download
         >
-          Mon CV{" "}
+          {t("resume")}{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
