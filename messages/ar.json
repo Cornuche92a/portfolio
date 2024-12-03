@@ -1,0 +1,165 @@
+{
+  "Intro": {
+    "title": {
+      "text1": "مرحبًا! أنا أنس.",
+      "text2": "أنا",
+      "text3g": "مطور جافا سكريبت متكامل",
+      "text4": "و",
+      "text5g": "مستشار أمن سيبراني",
+      "text6": "مع",
+      "text7g": "سنتين من الخبرة.",
+      "text8": "أحب قيادة جميع أنواع المشاريع،",
+      "text9i": "حل المشكلات",
+      "text10": "و",
+      "text11i": "تأمين المشاريع والبنى التحتية"
+    },
+    "contact": "اتصل بي",
+    "resume": "سيرتي الذاتية"
+  },
+  "About": {
+    "title": "عنّي",
+    "body": {
+      "text1": "مع",
+      "text1b": "سنتين من الخبرة،",
+      "text1bis": " أنا شغوف بتطوير الويب والأمن السيبراني، وقد قمت بتشكيل اهتمامي من خلال",
+      "text2b": "BTS SIO (SLAM)",
+      "text3": "، معززًا باستكشاف ذاتي مستمر. تم تحسين ممارستي من خلال مشاريع شخصية وحرة، بشكل رئيسي حول تقنيات مثل",
+      "text4b": "React، Next.js، وNode.js",
+      "text5": ". بالتوازي، أنا أيضًا",
+      "text6b": "مستشار أمن سيبراني",
+      "text7": "، حيث أركز على تأمين المشاريع والبنى التحتية. يعكس ملفي الشخصي رحلتي التعليمية ويقدم حلولًا إبداعية لمشاكل متنوعة."
+    }
+  },
+  "Projects": {
+    "title": "مشاريعي",
+    "dev": {
+      "project1": {
+        "title": "منصة SaaS",
+        "imageUrl": "/saas1.png",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Tailwind",
+          "Redux",
+          "MongoDB"
+        ],
+        "desc": "منصة SaaS تعتمد على الاشتراك توفر وصولًا مركزيًا إلى مجموعة متنوعة من الأدوات عبر الإنترنت لتحسين محركات البحث، وتحليل السوق، والتصميم.",
+        "link": "https://github.com/Cornuche92a/GeniusRanker/tree/master"
+      },
+      "project2": {
+        "title": "سوق العملات الرقمية",
+        "imageUrl": "/cryptomarketplace.png",
+        "tags": ["PHP", "Laravel", "Bitcoin Core", "Blockchain", "MySQL"],
+        "desc": "سوق لشراء المنتجات الرقمية فورًا عبر البيتكوين، مع دعم العملاء المدمج وإدارة محفظة البيتكوين.",
+        "link": "https://github.com/Cornuche92a/Bitcoin-Marketplace"
+      },
+      "project3": {
+        "title": "منصة SaaS",
+        "imageUrl": "/saas2.png",
+        "tags": ["React", "Next.js", "NoSQL", "API", "OpenUI"],
+        "desc": "خدمة تتيح لك الاشتراك وتجميع جميع اشتراكاتك المفضلة بسعر مميز، مع توفير إدارة مركزية.",
+        "link": "https://github.com/Cornuche92a/prelaunch-saas"
+      }
+    },
+    "sec": {
+      "project1": {
+        "title": "ملف شخصي",
+        "desc": "ملفي الشخصي، تم تطويره باستخدام Next.js وTailwindCSS.",
+        "link": "شاهد المشروع"
+      },
+      "project2": {
+        "title": "ملف شخصي",
+        "desc": "ملفي الشخصي، تم تطويره باستخدام Next.js وTailwindCSS.",
+        "link": "شاهد المشروع"
+      },
+      "project3": {
+        "title": "ملف شخصي",
+        "desc": "ملفي الشخصي، تم تطويره باستخدام Next.js وTailwindCSS.",
+        "link": "شاهد ��لمشروع"
+      }
+    }
+  },
+  "Skills": [
+    "Node.js",
+    "Next.js",
+    "PHP",
+    "HTML",
+    "API",
+    "Laravel",
+    "E-commerce",
+    "React.js",
+    "noSQL",
+    "SQL",
+    "Docker",
+    "MongoDB",
+    "Typescript",
+    "JavaScript",
+    "AWS",
+    "Google Cloud",
+    "Azure",
+    "Shopify",
+    "Liquid",
+    "React",
+    "Shopify",
+    "Prestashop",
+    "Mongoose",
+    "Stripe",
+    "Git",
+    "Wordpress",
+    "AGILE"
+  ],
+  "Experience": {
+    "experience1": {
+      "title": "مطور متكامل",
+      "whero": "عمل حر",
+      "date": "2022 - حتى الآن",
+      "icon": "FaReact",
+      "description": "تطوير التطبيقات، الوظائف، وصيانة الكود."
+    },
+    "experience2": {
+      "title": "مطور التجارة الإلكترونية",
+      "whero": "عمل حر",
+      "date": "2022 - 2023",
+      "icon": "CgWorkAlt",
+      "description": "إنشاء وتطوير متاجر Shopify وWordpress وPrestashop باستخدام Liquid وJS وPHP."
+    },
+    "experience3": {
+      "title": "Lycée Paul Lapie",
+      "whero": "Courbevoie",
+      "date": "2020 - 2022",
+      "icon": "LuGraduationCap",
+      "description": "تدريب في شهادة فني عالي في تطوير الويب."
+    }
+  },
+  "Contact": {
+    "title": "اتصل بي!",
+    "desc": "هل لديك مشروع في ذهنك أو ترغب فقط في الدردشة؟ لا تتردد في الاتصال بي!"
+  },
+  "Links": {
+    "home": {
+      "name": "الرئيسية",
+      "hash": "#home"
+    },
+    "me": {
+      "name": "ملخص",
+      "hash": "#about"
+    },
+    "projects": {
+      "name": "مشاريع",
+      "hash": "#projects"
+    },
+    "skills": {
+      "name": "مهارات",
+      "hash": "#skills"
+    },
+    "experience": {
+      "name": "خبرة",
+      "hash": "#experience"
+    },
+    "contact": {
+      "name": "اتصال",
+      "hash": "#contact"
+    }
+  }
+}

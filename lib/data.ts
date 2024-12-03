@@ -2,36 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
-
-export const links = [
-  {
-    name: "Accueil",
-    hash: "#home",
-  },
-  {
-    name: "Moi",
-    hash: "#about",
-  },
-  {
-    name: "Projets",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Expérience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
-] as const;
+import corpcommentImg from "@/public/cryptomarketplace.png";
+import rmtdevImg from "@/public/saas1.png";
+import wordanalyticsImg from "@/public/saas2.png";
 
 export const experiencesData = [
   {
@@ -51,7 +24,7 @@ export const experiencesData = [
     date: "2022 - Maintenant",
   },
   {
-    title: "E-commerce",
+    title: "Développeur Liquid E-commerce",
     location: "Freelance",
     description:
       "Création et développement de boutiques Shopify, Wordpress et Prestashop.",
@@ -63,24 +36,21 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Plateforme SaaS ",
-    description:
-        "Plateforme SaaS sur abonnement offrant un accès centralisé à une variété d'outils en ligne pour l'optimisation SEO, l'analyse de marché et le design.",
+    desc: "Plateforme SaaS sur abonnement offrant un accès centralisé à une variété d'outils en ligne pour l'optimisation SEO, l'analyse de marché et le design.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux", "MongoDB"],
     imageUrl: rmtdevImg,
     githubUrl: "https://github.com/Cornuche92a/GeniusRanker/tree/master"
   },
-    {
+  {
     title: "Crypto Marketplace",
-    description:
-      "Marketplace pour l'achat instantané de produits numériques via Bitcoin, avec support client intégré et gestion de wallet Bitcoin.",
+    desc: "Marketplace pour l'achat instantané de produits numériques via Bitcoin, avec support client intégré et gestion de wallet Bitcoin.",
     tags: ["PHP", "Laravel", "Bitcoin Core", "Blockchain", "MySQL"],
     imageUrl: corpcommentImg,
     githubUrl: "https://github.com/Cornuche92a/Bitcoin-Marketplace"
     },
   {
     title: "Plateforme SaaS",
-    description:
-      "Un service permettant de souscrire et de regrouper tous vos abonnements préférés à un prix avantageux, tout en offrant une gestion centralisée.",
+    desc: "Un service permettant de souscrire et de regrouper tous vos abonnements préférés à un prix avantageux, tout en offrant une gestion centralisée.",
     tags: ["React", "Next.js", "NoSQL", "API", "OpenUI"],
     imageUrl: wordanalyticsImg,
     githubUrl: "https://github.com/Cornuche92a/prelaunch-saas"
@@ -114,5 +84,5 @@ export const skillsData = [
   "Stripe",
   "Git",
   "Wordpress",
-  "AGILE"
+  "AGILE",
 ] as const;

@@ -6,20 +6,46 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import { useTranslations } from "next-intl";
+
+type ExperienceProps = {
+  title: string;
+  location: string;
+  date: string;
+  description: string;
+  icon: React.ReactNode;
+};
 
 export default function Experience() {
   const { ref } = useSectionInView("Expérience");
   const { theme } = useTheme();
+  const t = useTranslations();
+
+  const iconMapping: Record<string, React.ReactNode> = {
+    LuGraduationCap: <LuGraduationCap />,
+    FaReact: <FaReact />,
+    CgWorkAlt: <CgWorkAlt />,
+  };
+
+  const experienceObject: Record<string, ExperienceProps> = t.raw("Experience");
+  const experienceArray: ExperienceProps[] = Object.values(
+    experienceObject
+  ).map((experience) => ({
+    ...experience,
+    icon: iconMapping[experience.icon as string],
+  }));
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>Mon expérience</SectionHeading>
       <VerticalTimeline lineColor="">
-        {experiencesData.map((item, index) => (
+        {experienceArray.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{

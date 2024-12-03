@@ -1,3 +1,7 @@
+const createNextIntlPlugin = require('next-intl/plugin');
+
+const withNextIntl = createNextIntlPlugin();
+
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
@@ -5,13 +9,10 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "avatars.githubusercontent.com",
+        hostname: "dam.malt.com",
       },
     ],
   },
-  experimental: {
-    serverActions: true,
-  },
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);
