@@ -1,5 +1,5 @@
 import EmailTemplate from "@/email/contact-form-email";
-import { validateString } from "@/lib/utils";
+import { validateString, getErrorMessage } from "@/lib/utils";
 import { Resend } from "resend";
 import React from "react";
 
@@ -12,14 +12,16 @@ export async function POST(req: Request) {
 
   // simple server-side validation
   if (!validateString(senderEmail, 500)) {
-    return {
-      error: "Invalid sender email",
-    };
+    return new Response(JSON.stringify({ error: "Invalid sender email" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
   }
   if (!validateString(message, 5000)) {
-    return {
-      error: "Invalid message",
-    };
+    return new Response(JSON.stringify({ error: "Invalid message" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 
   try {
@@ -34,19 +36,26 @@ export async function POST(req: Request) {
       }),
     });
 
-    if (error) {
-      return {
-        throw: error,
-      };
+    if (data) {
+      return new Response(JSON.stringify(data), {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      });
     }
-    return new Response(JSON.stringify(data), {
-      status: 200,
-      headers: { "Content-Type": "application/json" },
-    });
+
+    if (error) {
+      return new Response(JSON.stringify({ error: getErrorMessage(error) }), {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
   } catch (error) {
-    return new Response(JSON.stringify({ error }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
+    return new Response(
+      JSON.stringify({ error: "An unexpected error occurred" }),
+      {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
   }
 }
