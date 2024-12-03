@@ -39,8 +39,8 @@ export default function Contact() {
         <a className="underline" href="mailto:anas.dev@icloud.com">
           anas.dev@icloud.com
         </a>{" "}
-        <p className={"items-center mt-10 text-5xl"}>👇</p>
       </p>
+      <p className={"items-center mt-10 text-5xl"}>👇</p>
 
       <Form
         className="mt-10 flex flex-col dark:text-black"
