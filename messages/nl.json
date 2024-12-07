@@ -1,0 +1,165 @@
+{
+  "Intro": {
+    "title": {
+      "text1": "Hallo! Ik ben Anas.",
+      "text2": "Ik ben een",
+      "text3g": "Full-Stack JS Ontwikkelaar",
+      "text4": "en een",
+      "text5g": "Cybersecurity Consultant",
+      "text6": "met",
+      "text7g": "2 jaar ervaring.",
+      "text8": "Ik hou ervan om allerlei projecten te leiden,",
+      "text9i": "problemen op te lossen",
+      "text10": "en",
+      "text11i": "projecten & infrastructuren te beveiligen"
+    },
+    "contact": "Neem contact met mij op",
+    "resume": "Mijn CV"
+  },
+  "About": {
+    "title": "Over mij",
+    "body": {
+      "text1": "Met mijn",
+      "text1b": "2 jaar ervaring,",
+      "text1bis": " ben ik gepassioneerd over webontwikkeling en cybersecurity, ik heb mijn interesse geformaliseerd door een",
+      "text2b": "BTS SIO (SLAM)",
+      "text3": " te volgen, verrijkt door een voortdurende autodidactische verkenning. Mijn praktijk is verfijnd in persoonlijke en freelance projecten, voornamelijk rond technologieën zoals",
+      "text4b": "React, Next.js en Node.js",
+      "text5": ". Daarnaast ben ik ook",
+      "text6b": "Cybersecurity Consultant",
+      "text7": ", waar ik me richt op het beveiligen van projecten en infrastructuren. Mijn portfolio weerspiegelt mijn leertraject en presenteert creatieve oplossingen voor verschillende problemen."
+    }
+  },
+  "Projects": {
+    "title": "Mijn projecten",
+    "dev": {
+      "project1": {
+        "title": "SaaS-platform",
+        "imageUrl": "/saas1.png",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Tailwind",
+          "Redux",
+          "MongoDB"
+        ],
+        "desc": "SaaS-platform op abonnement dat centrale toegang biedt tot een verscheidenheid aan online tools voor SEO-optimalisatie, marktanalyse en ontwerp.",
+        "link": "https://github.com/Cornuche92a/GeniusRanker/tree/master"
+      },
+      "project2": {
+        "title": "Crypto-marktplaats",
+        "imageUrl": "/cryptomarketplace.png",
+        "tags": ["PHP", "Laravel", "Bitcoin Core", "Blockchain", "MySQL"],
+        "desc": "Marktplaats voor de onmiddellijke aankoop van digitale producten met Bitcoin, met geïntegreerde klantenondersteuning en Bitcoin-walletbeheer.",
+        "link": "https://github.com/Cornuche92a/Bitcoin-Marketplace"
+      },
+      "project3": {
+        "title": "SaaS-platform",
+        "imageUrl": "/saas2.png",
+        "tags": ["React", "Next.js", "NoSQL", "API", "OpenUI"],
+        "desc": "Een dienst waarmee u al uw favoriete abonnementen tegen een voordelige prijs kunt abonneren en centraal beheren.",
+        "link": "https://github.com/Cornuche92a/prelaunch-saas"
+      }
+    },
+    "sec": {
+      "project1": {
+        "title": "Portfolio",
+        "desc": "Mijn persoonlijke portfolio, ontwikkeld met Next.js en TailwindCSS.",
+        "link": "Bekijk project"
+      },
+      "project2": {
+        "title": "Portfolio",
+        "desc": "Mijn persoonlijke portfolio, ontwikkeld met Next.js en TailwindCSS.",
+        "link": "Bekijk project"
+      },
+      "project3": {
+        "title": "Portfolio",
+        "desc": "Mijn persoonlijke portfolio, ontwikkeld met Next.js en TailwindCSS.",
+        "link": "Bekijk project"
+      }
+    }
+  },
+  "Skills": [
+    "Node.js",
+    "Next.js",
+    "PHP",
+    "Docker",
+    "MongoDB",
+    "Typescript",
+    "JavaScript",
+    "AWS",
+    "HTML",
+    "API",
+    "Laravel",
+    "E-commerce",
+    "React.js",
+    "noSQL",
+    "SQL",
+    "Google Cloud",
+    "Azure",
+    "Shopify",
+    "Liquid",
+    "React",
+    "Shopify",
+    "Prestashop",
+    "Mongoose",
+    "Stripe",
+    "Git",
+    "Wordpress",
+    "AGILE"
+  ],
+  "Experience": {
+    "experience1": {
+      "title": "Full-Stack Ontwikkelaar",
+      "whero": "Freelance",
+      "date": "2022 - Heden",
+      "icon": "FaReact",
+      "description": "Ontwikkeling van applicaties, functies en codeonderhoud."
+    },
+    "experience2": {
+      "title": "E-commerce Ontwikkelaar",
+      "whero": "Freelance",
+      "date": "2022 - 2023",
+      "icon": "CgWorkAlt",
+      "description": "Creatie en ontwikkeling van Shopify-, Wordpress- en Prestashop-winkels met Liquid, JS en PHP."
+    },
+    "experience3": {
+      "title": "Lycée Paul Lapie",
+      "whero": "Courbevoie",
+      "date": "2020 - 2022",
+      "icon": "LuGraduationCap",
+      "description": "Opleiding tot technicus voor webontwikkeling."
+    }
+  },
+  "Contact": {
+    "title": "Neem contact met mij op!",
+    "desc": "Heeft u een project in gedachten of wilt u gewoon een praatje maken? Aarzel niet om contact met mij op te nemen!"
+  },
+  "Links": {
+    "home": {
+      "name": "Ik",
+      "hash": "#home"
+    },
+    "me": {
+      "name": "Samenvatting",
+      "hash": "#about"
+    },
+    "projects": {
+      "name": "Projecten",
+      "hash": "#projects"
+    },
+    "skills": {
+      "name": "Vaardigheden",
+      "hash": "#skills"
+    },
+    "experience": {
+      "name": "Ervaring",
+      "hash": "#experience"
+    },
+    "contact": {
+      "name": "Contact",
+      "hash": "#contact"
+    }
+  }
+}

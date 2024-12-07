@@ -1,0 +1,165 @@
+{
+  "Intro": {
+    "title": {
+      "text1": "Hallo! Ich bin Anas.",
+      "text2": "Ich bin ein",
+      "text3g": "Full-Stack JS Entwickler",
+      "text4": "und ein",
+      "text5g": "Cybersecurity Berater",
+      "text6": "mit",
+      "text7g": "2 Jahren Erfahrung.",
+      "text8": "Ich liebe es, alle Arten von Projekten zu leiten,",
+      "text9i": "Probleme zu lösen",
+      "text10": "und",
+      "text11i": "Projekte & Infrastrukturen zu sichern"
+    },
+    "contact": "Kontaktieren Sie mich",
+    "resume": "Mein Lebenslauf"
+  },
+  "About": {
+    "title": "Über mich",
+    "body": {
+      "text1": "Mit meinen",
+      "text1b": "2 Jahren Erfahrung,",
+      "text1bis": " bin ich leidenschaftlich über Webentwicklung und Cybersicherheit, ich habe mein Interesse durch ein",
+      "text2b": "BTS SIO (SLAM)",
+      "text3": " formalisiert, bereichert durch eine kontinuierliche autodidaktische Erkundung. Meine Praxis hat sich in persönlichen und freiberuflichen Projekten verfeinert, hauptsächlich um Technologien wie",
+      "text4b": "React, Next.js und Node.js",
+      "text5": " herum. Parallel dazu bin ich auch",
+      "text6b": "Cybersecurity Berater",
+      "text7": ", wo ich mich auf die Sicherung von Projekten und Infrastrukturen konzentriere. Mein Portfolio spiegelt meinen Lernweg wider und präsentiert kreative Lösungen für verschiedene Probleme."
+    }
+  },
+  "Projects": {
+    "title": "Meine Projekte",
+    "dev": {
+      "project1": {
+        "title": "SaaS-Plattform",
+        "imageUrl": "/saas1.png",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Tailwind",
+          "Redux",
+          "MongoDB"
+        ],
+        "desc": "SaaS-Plattform im Abonnement, die zentralen Zugang zu einer Vielzahl von Online-Tools für SEO-Optimierung, Marktanalyse und Design bietet.",
+        "link": "https://github.com/Cornuche92a/GeniusRanker/tree/master"
+      },
+      "project2": {
+        "title": "Crypto-Marktplatz",
+        "imageUrl": "/cryptomarketplace.png",
+        "tags": ["PHP", "Laravel", "Bitcoin Core", "Blockchain", "MySQL"],
+        "desc": "Marktplatz für den sofortigen Kauf digitaler Produkte mit Bitcoin, mit integriertem Kundensupport und Bitcoin-Wallet-Verwaltung.",
+        "link": "https://github.com/Cornuche92a/Bitcoin-Marketplace"
+      },
+      "project3": {
+        "title": "SaaS-Plattform",
+        "imageUrl": "/saas2.png",
+        "tags": ["React", "Next.js", "NoSQL", "API", "OpenUI"],
+        "desc": "Ein Dienst, der es ermöglicht, alle Ihre bevorzugten Abonnements zu einem günstigen Preis zu abonnieren und zentral zu verwalten.",
+        "link": "https://github.com/Cornuche92a/prelaunch-saas"
+      }
+    },
+    "sec": {
+      "project1": {
+        "title": "Portfolio",
+        "desc": "Mein persönliches Portfolio, entwickelt mit Next.js und TailwindCSS.",
+        "link": "Projekt ansehen"
+      },
+      "project2": {
+        "title": "Portfolio",
+        "desc": "Mein persönliches Portfolio, entwickelt mit Next.js und TailwindCSS.",
+        "link": "Projekt ansehen"
+      },
+      "project3": {
+        "title": "Portfolio",
+        "desc": "Mein persönliches Portfolio, entwickelt mit Next.js und TailwindCSS.",
+        "link": "Projekt ansehen"
+      }
+    }
+  },
+  "Skills": [
+    "Node.js",
+    "Next.js",
+    "PHP",
+    "HTML",
+    "API",
+    "Laravel",
+    "E-commerce",
+    "React.js",
+    "noSQL",
+    "SQL",
+    "Docker",
+    "MongoDB",
+    "Typescript",
+    "JavaScript",
+    "AWS",
+    "Google Cloud",
+    "Azure",
+    "Shopify",
+    "Liquid",
+    "React",
+    "Shopify",
+    "Prestashop",
+    "Mongoose",
+    "Stripe",
+    "Git",
+    "Wordpress",
+    "AGILE"
+  ],
+  "Experience": {
+    "experience1": {
+      "title": "Full-Stack Entwickler",
+      "whero": "Freelance",
+      "date": "2022 - Gegenwart",
+      "icon": "FaReact",
+      "description": "Entwicklung von Anwendungen, Funktionen und Codewartung."
+    },
+    "experience2": {
+      "title": "E-commerce Entwickler",
+      "whero": "Freelance",
+      "date": "2022 - 2023",
+      "icon": "CgWorkAlt",
+      "description": "Erstellung und Entwicklung von Shopify-, Wordpress- und Prestashop-Shops mit Liquid, JS und PHP."
+    },
+    "experience3": {
+      "title": "Lycée Paul Lapie",
+      "whero": "Courbevoie",
+      "date": "2020 - 2022",
+      "icon": "LuGraduationCap",
+      "description": "Ausbildung zum Techniker für Webentwicklung."
+    }
+  },
+  "Contact": {
+    "title": "Kontaktieren Sie mich!",
+    "desc": "Haben Sie ein Projekt im Kopf oder möchten Sie einfach nur plaudern? Zögern Sie nicht, mich zu kontaktieren!"
+  },
+  "Links": {
+    "home": {
+      "name": "Ich",
+      "hash": "#home"
+    },
+    "me": {
+      "name": "Zusammenfassung",
+      "hash": "#about"
+    },
+    "projects": {
+      "name": "Projekte",
+      "hash": "#projects"
+    },
+    "skills": {
+      "name": "Fähigkeiten",
+      "hash": "#skills"
+    },
+    "experience": {
+      "name": "Erfahrung",
+      "hash": "#experience"
+    },
+    "contact": {
+      "name": "Kontakt",
+      "hash": "#contact"
+    }
+  }
+}

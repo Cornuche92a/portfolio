@@ -1,0 +1,165 @@
+{
+  "Intro": {
+    "title": {
+      "text1": "Sveiki! Aš esu Anas.",
+      "text2": "Aš esu",
+      "text3g": "Full-Stack JS Kūrėjas",
+      "text4": "ir",
+      "text5g": "Kibernetinio Saugumo Konsultantas",
+      "text6": "su",
+      "text7g": "2 metų patirtimi.",
+      "text8": "Man patinka vadovauti įvairiems projektams,",
+      "text9i": "spręsti problemas",
+      "text10": "ir",
+      "text11i": "saugoti projektus ir infrastruktūras"
+    },
+    "contact": "Susisiekite su manimi",
+    "resume": "Mano CV"
+  },
+  "About": {
+    "title": "Apie mane",
+    "body": {
+      "text1": "Su mano",
+      "text1b": "2 metų patirtimi,",
+      "text1bis": " aš esu aistringas dėl interneto kūrimo ir kibernetinio saugumo, savo susidomėjimą formalizavau per",
+      "text2b": "BTS SIO (SLAM)",
+      "text3": " praturtintą nuolatiniu savarankišku tyrinėjimu. Mano praktika buvo tobulinama asmeniniuose ir laisvai samdomuose projektuose, daugiausia naudojant technologijas kaip",
+      "text4b": "React, Next.js ir Node.js",
+      "text5": ". Be to, aš taip pat esu",
+      "text6b": "Kibernetinio Saugumo Konsultantas",
+      "text7": ", kur aš sutelkiu dėmesį į projektų ir infrastruktūrų saugumą. Mano portfelis atspindi mano mokymosi kelią ir pristato kūrybinius sprendimus įvairioms problemoms."
+    }
+  },
+  "Projects": {
+    "title": "Mano projektai",
+    "dev": {
+      "project1": {
+        "title": "SaaS platforma",
+        "imageUrl": "/saas1.png",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Tailwind",
+          "Redux",
+          "MongoDB"
+        ],
+        "desc": "Prenumeruojama SaaS platforma, suteikianti centralizuotą prieigą prie įvairių internetinių įrankių SEO optimizavimui, rinkos analizei ir dizainui.",
+        "link": "https://github.com/Cornuche92a/GeniusRanker/tree/master"
+      },
+      "project2": {
+        "title": "Kripto rinkos vieta",
+        "imageUrl": "/cryptomarketplace.png",
+        "tags": ["PHP", "Laravel", "Bitcoin Core", "Blockchain", "MySQL"],
+        "desc": "Rinkos vieta, skirta skaitmeninių produktų pirkimui su Bitcoin, su integruotu klientų palaikymu ir Bitcoin piniginės valdymu.",
+        "link": "https://github.com/Cornuche92a/Bitcoin-Marketplace"
+      },
+      "project3": {
+        "title": "SaaS platforma",
+        "imageUrl": "/saas2.png",
+        "tags": ["React", "Next.js", "NoSQL", "API", "OpenUI"],
+        "desc": "Paslauga, leidžianti prenumeruoti ir centralizuotai valdyti visus jūsų mėgstamus prenumeratas už prieinamą kainą.",
+        "link": "https://github.com/Cornuche92a/prelaunch-saas"
+      }
+    },
+    "sec": {
+      "project1": {
+        "title": "Portfolio",
+        "desc": "Mano asmeninis portfolio, sukurtas naudojant Next.js ir TailwindCSS.",
+        "link": "Peržiūrėti projektą"
+      },
+      "project2": {
+        "title": "Portfolio",
+        "desc": "Mano asmeninis portfolio, sukurtas naudojant Next.js ir TailwindCSS.",
+        "link": "Peržiūrėti projektą"
+      },
+      "project3": {
+        "title": "Portfolio",
+        "desc": "Mano asmeninis portfolio, sukurtas naudojant Next.js ir TailwindCSS.",
+        "link": "Peržiūrėti projektą"
+      }
+    }
+  },
+  "Skills": [
+    "Node.js",
+    "Next.js",
+    "PHP",
+    "HTML",
+    "API",
+    "Laravel",
+    "E-commerce",
+    "React.js",
+    "noSQL",
+    "SQL",
+    "Docker",
+    "MongoDB",
+    "Typescript",
+    "JavaScript",
+    "AWS",
+    "Google Cloud",
+    "Azure",
+    "Shopify",
+    "Liquid",
+    "React",
+    "Shopify",
+    "Prestashop",
+    "Mongoose",
+    "Stripe",
+    "Git",
+    "Wordpress",
+    "AGILE"
+  ],
+  "Experience": {
+    "experience1": {
+      "title": "Full-Stack Kūrėjas",
+      "whero": "Freelance",
+      "date": "2022 - Dabartis",
+      "icon": "FaReact",
+      "description": "Programų kūrimas, funkcijų kūrimas ir kodo priežiūra."
+    },
+    "experience2": {
+      "title": "E-commerce Kūrėjas",
+      "whero": "Freelance",
+      "date": "2022 - 2023",
+      "icon": "CgWorkAlt",
+      "description": "Shopify, Wordpress ir Prestashop parduotuvių kūrimas ir vystymas naudojant Liquid, JS ir PHP."
+    },
+    "experience3": {
+      "title": "Lycée Paul Lapie",
+      "whero": "Courbevoie",
+      "date": "2020 - 2022",
+      "icon": "LuGraduationCap",
+      "description": "Web kūrimo techniko mokymai."
+    }
+  },
+  "Contact": {
+    "title": "Susisiekite su manimi!",
+    "desc": "Turite projektą mintyse ar tiesiog norite pasikalbėti? Nedvejodami susisiekite su manimi!"
+  },
+  "Links": {
+    "home": {
+      "name": "Aš",
+      "hash": "#home"
+    },
+    "me": {
+      "name": "Santrauka",
+      "hash": "#about"
+    },
+    "projects": {
+      "name": "Projektai",
+      "hash": "#projects"
+    },
+    "skills": {
+      "name": "Įgūdžiai",
+      "hash": "#skills"
+    },
+    "experience": {
+      "name": "Patirtis",
+      "hash": "#experience"
+    },
+    "contact": {
+      "name": "Kontaktas",
+      "hash": "#contact"
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "Intro": {
+    "title": {
+      "text1": "Hej! Jag är Anas.",
+      "text2": "Jag är en",
+      "text3g": "Full-Stack JS Utvecklare",
+      "text4": "och en",
+      "text5g": "Cybersecurity Konsult",
+      "text6": "med",
+      "text7g": "2 års erfarenhet.",
+      "text8": "Jag älskar att leda alla typer av projekt,",
+      "text9i": "lösa problem",
+      "text10": "och",
+      "text11i": "säkra projekt & infrastrukturer"
+    },
+    "contact": "Kontakta mig",
+    "resume": "Mitt CV"
+  },
+  "About": {
+    "title": "Om mig",
+    "body": {
+      "text1": "Med mina",
+      "text1b": "2 års erfarenhet,",
+      "text1bis": " är jag passionerad om webbutveckling och cybersäkerhet, jag har formaliserat mitt intresse genom en",
+      "text2b": "BTS SIO (SLAM)",
+      "text3": " berikad genom en kontinuerlig autodidaktisk utforskning. Min praktik har förfinats i personliga och frilansprojekt, främst kring teknologier som",
+      "text4b": "React, Next.js och Node.js",
+      "text5": ". Parallellt är jag också",
+      "text6b": "Cybersecurity Konsult",
+      "text7": ", där jag fokuserar på att säkra projekt och infrastrukturer. Min portfölj speglar min lärande resa och presenterar kreativa lösningar på olika problem."
+    }
+  },
+  "Projects": {
+    "title": "Mina projekt",
+    "dev": {
+      "project1": {
+        "title": "SaaS-plattform",
+        "imageUrl": "/saas1.png",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Tailwind",
+          "Redux",
+          "MongoDB"
+        ],
+        "desc": "SaaS-plattform på prenumeration som erbjuder central tillgång till en mängd onlineverktyg för SEO-optimering, marknadsanalys och design.",
+        "link": "https://github.com/Cornuche92a/GeniusRanker/tree/master"
+      },
+      "project2": {
+        "title": "Crypto-marknadsplats",
+        "imageUrl": "/cryptomarketplace.png",
+        "tags": ["PHP", "Laravel", "Bitcoin Core", "Blockchain", "MySQL"],
+        "desc": "Marknadsplats för omedelbart köp av digitala produkter med Bitcoin, med integrerad kundsupport och Bitcoin-plånbokshantering.",
+        "link": "https://github.com/Cornuche92a/Bitcoin-Marketplace"
+      },
+      "project3": {
+        "title": "SaaS-plattform",
+        "imageUrl": "/saas2.png",
+        "tags": ["React", "Next.js", "NoSQL", "API", "OpenUI"],
+        "desc": "En tjänst som gör det möjligt att prenumerera på och centralt hantera alla dina favoritprenumerationer till ett förmånligt pris.",
+        "link": "https://github.com/Cornuche92a/prelaunch-saas"
+      }
+    },
+    "sec": {
+      "project1": {
+        "title": "Portfolio",
+        "desc": "Min personliga portfölj, utvecklad med Next.js och TailwindCSS.",
+        "link": "Se projekt"
+      },
+      "project2": {
+        "title": "Portfolio",
+        "desc": "Min personliga portfölj, utvecklad med Next.js och TailwindCSS.",
+        "link": "Se projekt"
+      },
+      "project3": {
+        "title": "Portfolio",
+        "desc": "Min personliga portfölj, utvecklad med Next.js och TailwindCSS.",
+        "link": "Se projekt"
+      }
+    }
+  },
+  "Skills": [
+    "Node.js",
+    "Next.js",
+    "PHP",
+    "HTML",
+    "API",
+    "Laravel",
+    "E-commerce",
+    "React.js",
+    "noSQL",
+    "SQL",
+    "Docker",
+    "MongoDB",
+    "Typescript",
+    "JavaScript",
+    "AWS",
+    "Google Cloud",
+    "Azure",
+    "Shopify",
+    "Liquid",
+    "React",
+    "Shopify",
+    "Prestashop",
+    "Mongoose",
+    "Stripe",
+    "Git",
+    "Wordpress",
+    "AGILE"
+  ],
+  "Experience": {
+    "experience1": {
+      "title": "Full-Stack Utvecklare",
+      "whero": "Frilans",
+      "date": "2022 - Nuvarande",
+      "icon": "FaReact",
+      "description": "Utveckling av applikationer, funktioner och kodunderhåll."
+    },
+    "experience2": {
+      "title": "E-commerce Utvecklare",
+      "whero": "Frilans",
+      "date": "2022 - 2023",
+      "icon": "CgWorkAlt",
+      "description": "Skapande och utveckling av Shopify-, Wordpress- och Prestashop-butiker med Liquid, JS och PHP."
+    },
+    "experience3": {
+      "title": "Lycée Paul Lapie",
+      "whero": "Courbevoie",
+      "date": "2020 - 2022",
+      "icon": "LuGraduationCap",
+      "description": "Utbildning till tekniker för webbutveckling."
+    }
+  },
+  "Contact": {
+    "title": "Kontakta mig!",
+    "desc": "Har du ett projekt i åtanke eller vill du bara prata? Tveka inte att kontakta mig!"
+  },
+  "Links": {
+    "home": {
+      "name": "Jag",
+      "hash": "#home"
+    },
+    "me": {
+      "name": "Sammanfattning",
+      "hash": "#about"
+    },
+    "projects": {
+      "name": "Projekt",
+      "hash": "#projects"
+    },
+    "skills": {
+      "name": "Färdigheter",
+      "hash": "#skills"
+    },
+    "experience": {
+      "name": "Erfarenhet",
+      "hash": "#experience"
+    },
+    "contact": {
+      "name": "Kontakt",
+      "hash": "#contact"
+    }
+  }
+}

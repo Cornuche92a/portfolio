@@ -1,0 +1,165 @@
+{
+  "Intro": {
+    "title": {
+      "text1": "¡Hola! Soy Anas.",
+      "text2": "Soy un",
+      "text3g": "Desarrollador Full-Stack JS",
+      "text4": "y un",
+      "text5g": "Consultor de Ciberseguridad",
+      "text6": "con",
+      "text7g": "2 años de experiencia.",
+      "text8": "Me encanta liderar todo tipo de proyectos,",
+      "text9i": "resolver problemas",
+      "text10": "y",
+      "text11i": "asegurar proyectos e infraestructuras"
+    },
+    "contact": "Contáctame",
+    "resume": "Mi CV"
+  },
+  "About": {
+    "title": "Sobre mí",
+    "body": {
+      "text1": "Con mis",
+      "text1b": "2 años de experiencia,",
+      "text1bis": " soy apasionado por el desarrollo web y la ciberseguridad, formalicé mi interés a través de un",
+      "text2b": "BTS SIO (SLAM)",
+      "text3": " enriquecido por una exploración autodidacta continua. Mi práctica se ha perfeccionado en proyectos personales y freelance, principalmente alrededor de tecnolog��as como",
+      "text4b": "React, Next.js y Node.js",
+      "text5": ". Paralelamente, también soy",
+      "text6b": "Consultor de Ciberseguridad",
+      "text7": ", donde me enfoco en asegurar proyectos e infraestructuras. Mi portafolio refleja mi trayectoria de aprendizaje y presenta soluciones creativas a diversos problemas."
+    }
+  },
+  "Projects": {
+    "title": "Mis proyectos",
+    "dev": {
+      "project1": {
+        "title": "Plataforma SaaS",
+        "imageUrl": "/saas1.png",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Tailwind",
+          "Redux",
+          "MongoDB"
+        ],
+        "desc": "Plataforma SaaS por suscripción que ofrece acceso centralizado a una variedad de herramientas en línea para la optimización SEO, análisis de mercado y diseño.",
+        "link": "https://github.com/Cornuche92a/GeniusRanker/tree/master"
+      },
+      "project2": {
+        "title": "Mercado de Criptomonedas",
+        "imageUrl": "/cryptomarketplace.png",
+        "tags": ["PHP", "Laravel", "Bitcoin Core", "Blockchain", "MySQL"],
+        "desc": "Mercado para la compra instantánea de productos digitales con Bitcoin, con soporte al cliente integrado y gestión de billetera Bitcoin.",
+        "link": "https://github.com/Cornuche92a/Bitcoin-Marketplace"
+      },
+      "project3": {
+        "title": "Plataforma SaaS",
+        "imageUrl": "/saas2.png",
+        "tags": ["React", "Next.js", "NoSQL", "API", "OpenUI"],
+        "desc": "Un servicio que permite suscribirse y gestionar centralmente todas tus suscripciones favoritas a un precio asequible.",
+        "link": "https://github.com/Cornuche92a/prelaunch-saas"
+      }
+    },
+    "sec": {
+      "project1": {
+        "title": "Portafolio",
+        "desc": "Mi portafolio personal, desarrollado con Next.js y TailwindCSS.",
+        "link": "Ver proyecto"
+      },
+      "project2": {
+        "title": "Portafolio",
+        "desc": "Mi portafolio personal, desarrollado con Next.js y TailwindCSS.",
+        "link": "Ver proyecto"
+      },
+      "project3": {
+        "title": "Portafolio",
+        "desc": "Mi portafolio personal, desarrollado con Next.js y TailwindCSS.",
+        "link": "Ver proyecto"
+      }
+    }
+  },
+  "Skills": [
+    "Node.js",
+    "Next.js",
+    "PHP",
+    "HTML",
+    "API",
+    "Laravel",
+    "E-commerce",
+    "React.js",
+    "noSQL",
+    "SQL",
+    "Docker",
+    "MongoDB",
+    "Typescript",
+    "JavaScript",
+    "AWS",
+    "Google Cloud",
+    "Azure",
+    "Shopify",
+    "Liquid",
+    "React",
+    "Shopify",
+    "Prestashop",
+    "Mongoose",
+    "Stripe",
+    "Git",
+    "Wordpress",
+    "AGILE"
+  ],
+  "Experience": {
+    "experience1": {
+      "title": "Desarrollador Full-Stack",
+      "whero": "Freelance",
+      "date": "2022 - Presente",
+      "icon": "FaReact",
+      "description": "Desarrollo de aplicaciones, funciones y mantenimiento de código."
+    },
+    "experience2": {
+      "title": "Desarrollador E-commerce",
+      "whero": "Freelance",
+      "date": "2022 - 2023",
+      "icon": "CgWorkAlt",
+      "description": "Creación y desarrollo de tiendas Shopify, Wordpress y Prestashop con Liquid, JS y PHP."
+    },
+    "experience3": {
+      "title": "Lycée Paul Lapie",
+      "whero": "Courbevoie",
+      "date": "2020 - 2022",
+      "icon": "LuGraduationCap",
+      "description": "Formación en Técnico Superior en Desarrollo Web."
+    }
+  },
+  "Contact": {
+    "title": "¡Contáctame!",
+    "desc": "¿Tienes un proyecto en mente o simplemente quieres charlar? ¡No dudes en contactarme!"
+  },
+  "Links": {
+    "home": {
+      "name": "Yo",
+      "hash": "#home"
+    },
+    "me": {
+      "name": "Resumen",
+      "hash": "#about"
+    },
+    "projects": {
+      "name": "Proyectos",
+      "hash": "#projects"
+    },
+    "skills": {
+      "name": "Habilidades",
+      "hash": "#skills"
+    },
+    "experience": {
+      "name": "Experiencia",
+      "hash": "#experience"
+    },
+    "contact": {
+      "name": "Contacto",
+      "hash": "#contact"
+    }
+  }
+}
