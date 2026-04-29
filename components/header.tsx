@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useTranslations } from "next-intl";
