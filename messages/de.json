@@ -136,6 +136,31 @@
     "title": "Kontaktieren Sie mich!",
     "desc": "Haben Sie ein Projekt im Kopf oder möchten Sie einfach nur plaudern? Zögern Sie nicht, mich zu kontaktieren!"
   },
+  "HackTheBox": {
+    "title": "HackTheBox Maschinen",
+    "desc": "Hier sind die Maschinen, die ich auf HackTheBox im Rahmen meiner offensiven Cybersicherheitsübungen gehackt habe.",
+    "badge": "Mit der HackTheBox-API synchronisiert",
+    "userFlag": "User",
+    "rootFlag": "Root",
+    "defaultDescription": "HackTheBox-Maschine „{name}\" während einer Pentest-Übung kompromittiert — Aufklärung, Ausnutzung und Privilegien-Eskalation bis zum Root-Flag.",
+    "error": "HackTheBox-Maschinen konnten gerade nicht geladen werden.",
+    "empty": "Noch keine geknackten Maschinen anzuzeigen.",
+    "stats": {
+      "total": "Gehackt"
+    },
+    "showMore": "Mehr anzeigen",
+    "showAll": "Alle anzeigen",
+    "showLess": "Weniger anzeigen",
+    "showingCount": "{shown} / {total} Maschinen angezeigt",
+    "descriptions": {
+      "Lame": "Linux-Einsteigermaschine, die eine Samba-Schwachstelle (CVE-2007-2447) ausnutzt und Remote-Befehlsausführung als root ermöglicht.",
+      "Legacy": "Altes Windows XP, anfällig für MS08-067 und MS17-010 — ein Klassiker zum Verständnis von SMB-Exploits.",
+      "Blue": "Windows 7, anfällig für EternalBlue (MS17-010), der berühmte Exploit hinter WannaCry.",
+      "Devel": "Windows IIS mit offenem anonymen FTP — Upload einer aspx-Webshell und Eskalation via MS11-046.",
+      "Jerry": "Tomcat-Server mit Standard-Manager-Credentials, Deployment einer bösartigen WAR für eine SYSTEM-Shell.",
+      "Bashed": "Eine exponierte phpbash bietet eine www-data-Shell, dann Eskalation über einen fehlkonfigurierten Cron-Job."
+    }
+  },
   "Links": {
     "home": {
       "name": "Ich",
@@ -152,6 +177,10 @@
     "skills": {
       "name": "Fähigkeiten",
       "hash": "#skills"
+    },
+    "hackthebox": {
+      "name": "HackTheBox",
+      "hash": "#hackthebox"
     },
     "experience": {
       "name": "Erfahrung",

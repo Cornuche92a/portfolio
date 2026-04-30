@@ -136,6 +136,31 @@
     "title": "¡Contáctame!",
     "desc": "¿Tienes un proyecto en mente o simplemente quieres charlar? ¡No dudes en contactarme!"
   },
+  "HackTheBox": {
+    "title": "Máquinas HackTheBox",
+    "desc": "Estas son las máquinas que he vulnerado en HackTheBox como parte de mi práctica de ciberseguridad ofensiva.",
+    "badge": "Sincronizado con la API de HackTheBox",
+    "userFlag": "User",
+    "rootFlag": "Root",
+    "defaultDescription": "Máquina HackTheBox «{name}» comprometida durante un ejercicio de pentest — reconocimiento, explotación y escalada de privilegios hasta la flag root.",
+    "error": "No se pudieron cargar las máquinas HackTheBox.",
+    "empty": "Aún no hay máquinas vulneradas para mostrar.",
+    "stats": {
+      "total": "Vulneradas"
+    },
+    "showMore": "Ver más",
+    "showAll": "Ver todas",
+    "showLess": "Ver menos",
+    "showingCount": "{shown} / {total} máquinas mostradas",
+    "descriptions": {
+      "Lame": "Máquina Linux de iniciación que explota una vulnerabilidad de Samba (CVE-2007-2447) permitiendo ejecución de comandos remotos como root.",
+      "Legacy": "Antiguo Windows XP vulnerable a MS08-067 y MS17-010 — un clásico para entender los exploits SMB.",
+      "Blue": "Windows 7 vulnerable a EternalBlue (MS17-010), el icónico exploit detrás de WannaCry.",
+      "Devel": "Windows IIS con FTP anónimo abierto — subida de una webshell aspx y escalada vía MS11-046.",
+      "Jerry": "Servidor Tomcat con credenciales de manager por defecto, despliegue de un WAR malicioso para una shell SYSTEM.",
+      "Bashed": "Un phpbash expuesto ofrece una shell www-data, luego escalada vía un cron mal configurado."
+    }
+  },
   "Links": {
     "home": {
       "name": "Yo",
@@ -152,6 +177,10 @@
     "skills": {
       "name": "Habilidades",
       "hash": "#skills"
+    },
+    "hackthebox": {
+      "name": "HackTheBox",
+      "hash": "#hackthebox"
     },
     "experience": {
       "name": "Experiencia",

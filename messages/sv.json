@@ -136,6 +136,31 @@
     "title": "Kontakta mig!",
     "desc": "Har du ett projekt i åtanke eller vill du bara prata? Tveka inte att kontakta mig!"
   },
+  "HackTheBox": {
+    "title": "HackTheBox-maskiner",
+    "desc": "Här är maskinerna som jag har hackat på HackTheBox som en del av min offensiva cybersäkerhetsträning.",
+    "badge": "Synkad med HackTheBox-API:t",
+    "userFlag": "User",
+    "rootFlag": "Root",
+    "defaultDescription": "HackTheBox-maskin „{name}\" komprometterad under en pentest-övning — rekognosering, exploatering och privilege escalation upp till root-flaggan.",
+    "error": "Det gick inte att ladda HackTheBox-maskinerna just nu.",
+    "empty": "Inga hackade maskiner att visa ännu.",
+    "stats": {
+      "total": "Hackade"
+    },
+    "showMore": "Visa fler",
+    "showAll": "Visa alla",
+    "showLess": "Visa färre",
+    "showingCount": "{shown} / {total} maskiner visas",
+    "descriptions": {
+      "Lame": "Nybörjarmaskin på Linux som utnyttjar en Samba-sårbarhet (CVE-2007-2447) för remote command execution som root.",
+      "Legacy": "Gammal Windows XP sårbar för MS08-067 och MS17-010 — en klassiker för att förstå SMB-exploits.",
+      "Blue": "Windows 7 sårbar för EternalBlue (MS17-010), den berömda exploiten bakom WannaCry.",
+      "Devel": "Windows IIS med öppen anonym FTP — uppladdning av en aspx webshell och eskalering via MS11-046.",
+      "Jerry": "Tomcat-server med standardinloggningar till manager, deployment av en skadlig WAR för en SYSTEM-shell.",
+      "Bashed": "En exponerad phpbash ger en www-data shell, sedan eskalering via en felkonfigurerad cron."
+    }
+  },
   "Links": {
     "home": {
       "name": "Jag",
@@ -152,6 +177,10 @@
     "skills": {
       "name": "Färdigheter",
       "hash": "#skills"
+    },
+    "hackthebox": {
+      "name": "HackTheBox",
+      "hash": "#hackthebox"
     },
     "experience": {
       "name": "Erfarenhet",

@@ -136,6 +136,31 @@
     "title": "Contact me!",
     "desc": "Do you have a project in mind or just want to chat? Feel free to contact me!"
   },
+  "HackTheBox": {
+    "title": "HackTheBox Machines",
+    "desc": "Here are the machines I've pwned on HackTheBox as part of my offensive cybersecurity practice.",
+    "badge": "Synced with the HackTheBox API",
+    "userFlag": "User",
+    "rootFlag": "Root",
+    "defaultDescription": "HackTheBox machine \"{name}\" compromised during a pentest exercise — reconnaissance, exploitation and privilege escalation up to the root flag.",
+    "error": "Could not load HackTheBox machines right now.",
+    "empty": "No pwned machines to show yet.",
+    "stats": {
+      "total": "Pwned"
+    },
+    "showMore": "Show more",
+    "showAll": "Show all",
+    "showLess": "Show less",
+    "showingCount": "{shown} / {total} machines shown",
+    "descriptions": {
+      "Lame": "Starter Linux box exploiting a Samba vulnerability (CVE-2007-2447) leading to remote command execution as root.",
+      "Legacy": "Old Windows XP vulnerable to MS08-067 and MS17-010 — a classic to understand SMB exploits.",
+      "Blue": "Windows 7 vulnerable to EternalBlue (MS17-010), the iconic exploit behind WannaCry.",
+      "Devel": "Windows IIS with anonymous FTP open — upload an aspx webshell and escalate via MS11-046.",
+      "Jerry": "Tomcat server with default manager credentials, deploying a malicious WAR for a SYSTEM shell.",
+      "Bashed": "An exposed phpbash gives a www-data shell, then privilege escalation via a misconfigured cron job."
+    }
+  },
   "Links": {
     "home": {
       "name": "Home",
@@ -152,6 +177,10 @@
     "skills": {
       "name": "Skills",
       "hash": "#skills"
+    },
+    "hackthebox": {
+      "name": "HackTheBox",
+      "hash": "#hackthebox"
     },
     "experience": {
       "name": "Experience",

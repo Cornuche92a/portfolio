@@ -136,6 +136,31 @@
     "title": "اتصل بي!",
     "desc": "هل لديك مشروع في ذهنك أو ترغب فقط في الدردشة؟ لا تتردد في الاتصال بي!"
   },
+  "HackTheBox": {
+    "title": "آلات HackTheBox",
+    "desc": "هذه هي الآلات التي اخترقتها على HackTheBox كجزء من تدريبي في الأمن السيبراني الهجومي.",
+    "badge": "متزامن مع واجهة HackTheBox البرمجية",
+    "userFlag": "User",
+    "rootFlag": "Root",
+    "defaultDescription": "آلة HackTheBox «{name}» تم اختراقها خلال تمرين اختبار اختراق — استطلاع واستغلال ورفع الامتيازات حتى الحصول على علم الجذر.",
+    "error": "تعذر تحميل آلات HackTheBox حاليًا.",
+    "empty": "لا توجد آلات مخترقة لعرضها بعد.",
+    "stats": {
+      "total": "مخترقة"
+    },
+    "showMore": "عرض المزيد",
+    "showAll": "عرض الكل",
+    "showLess": "عرض أقل",
+    "showingCount": "{shown} / {total} آلات معروضة",
+    "descriptions": {
+      "Lame": "آلة لينكس للمبتدئين تستغل ثغرة Samba (CVE-2007-2447) تؤدي إلى تنفيذ أوامر عن بعد كـ root.",
+      "Legacy": "ويندوز XP قديم معرض لـ MS08-067 و MS17-010 — كلاسيكي لفهم استغلالات SMB.",
+      "Blue": "ويندوز 7 معرض لـ EternalBlue (MS17-010)، الاستغلال الشهير وراء WannaCry.",
+      "Devel": "Windows IIS مع FTP مجهول مفتوح — رفع webshell بصيغة aspx ثم التصعيد عبر MS11-046.",
+      "Jerry": "خادم Tomcat ببيانات اعتماد افتراضية للمدير، ونشر ملف WAR خبيث للحصول على shell SYSTEM.",
+      "Bashed": "phpbash مكشوف يوفر shell بصلاحيات www-data، ثم التصعيد عبر cron خاطئ الإعداد."
+    }
+  },
   "Links": {
     "home": {
       "name": "الرئيسية",
@@ -152,6 +177,10 @@
     "skills": {
       "name": "مهارات",
       "hash": "#skills"
+    },
+    "hackthebox": {
+      "name": "HackTheBox",
+      "hash": "#hackthebox"
     },
     "experience": {
       "name": "خبرة",

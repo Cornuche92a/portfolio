@@ -136,6 +136,31 @@
     "title": "Neem contact met mij op!",
     "desc": "Heeft u een project in gedachten of wilt u gewoon een praatje maken? Aarzel niet om contact met mij op te nemen!"
   },
+  "HackTheBox": {
+    "title": "HackTheBox-machines",
+    "desc": "Dit zijn de machines die ik op HackTheBox heb gehackt als onderdeel van mijn offensieve cybersecurity-praktijk.",
+    "badge": "Gesynchroniseerd met de HackTheBox-API",
+    "userFlag": "User",
+    "rootFlag": "Root",
+    "defaultDescription": "HackTheBox-machine „{name}\" gecompromitteerd tijdens een pentest-oefening — reconnaissance, exploitatie en privilege escalation tot aan de root flag.",
+    "error": "Kan HackTheBox-machines momenteel niet laden.",
+    "empty": "Nog geen gehackte machines om te tonen.",
+    "stats": {
+      "total": "Gehackt"
+    },
+    "showMore": "Toon meer",
+    "showAll": "Toon alles",
+    "showLess": "Toon minder",
+    "showingCount": "{shown} / {total} machines getoond",
+    "descriptions": {
+      "Lame": "Startersmachine op Linux die een Samba-kwetsbaarheid (CVE-2007-2447) misbruikt voor remote command execution als root.",
+      "Legacy": "Oude Windows XP kwetsbaar voor MS08-067 en MS17-010 — een klassieker om SMB-exploits te begrijpen.",
+      "Blue": "Windows 7 kwetsbaar voor EternalBlue (MS17-010), de beroemde exploit achter WannaCry.",
+      "Devel": "Windows IIS met open anonymous FTP — upload van een aspx webshell en escalatie via MS11-046.",
+      "Jerry": "Tomcat-server met standaard manager-credentials, deployment van een kwaadaardige WAR voor een SYSTEM shell.",
+      "Bashed": "Een blootgestelde phpbash geeft een www-data shell, dan escalatie via een verkeerd geconfigureerde cron."
+    }
+  },
   "Links": {
     "home": {
       "name": "Ik",
@@ -152,6 +177,10 @@
     "skills": {
       "name": "Vaardigheden",
       "hash": "#skills"
+    },
+    "hackthebox": {
+      "name": "HackTheBox",
+      "hash": "#hackthebox"
     },
     "experience": {
       "name": "Ervaring",
