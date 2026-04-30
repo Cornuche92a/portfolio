@@ -136,6 +136,31 @@
     "title": "Susisiekite su manimi!",
     "desc": "Turite projektą mintyse ar tiesiog norite pasikalbėti? Nedvejodami susisiekite su manimi!"
   },
+  "HackTheBox": {
+    "title": "HackTheBox mašinos",
+    "desc": "Čia yra mašinos, kurias įsilaužiau į HackTheBox platformą kaip dalį savo puolamojo kibernetinio saugumo praktikos.",
+    "badge": "Sinchronizuota su HackTheBox API",
+    "userFlag": "User",
+    "rootFlag": "Root",
+    "defaultDescription": "HackTheBox mašina „{name}\" pažeista per pentest pratybą — žvalgyba, išnaudojimas ir privilegijų kėlimas iki root vėliavos.",
+    "error": "Nepavyko įkelti HackTheBox mašinų.",
+    "empty": "Kol kas nėra nulaužtų mašinų.",
+    "stats": {
+      "total": "Nulaužta"
+    },
+    "showMore": "Rodyti daugiau",
+    "showAll": "Rodyti visas",
+    "showLess": "Rodyti mažiau",
+    "showingCount": "Rodoma {shown} / {total} mašinų",
+    "descriptions": {
+      "Lame": "Pradinė Linux mašina, išnaudojanti Samba spragą (CVE-2007-2447) nuotolinei komandų vykdymui kaip root.",
+      "Legacy": "Senas Windows XP pažeidžiamas dėl MS08-067 ir MS17-010 — klasika SMB eksploatavimui suprasti.",
+      "Blue": "Windows 7 pažeidžiamas dėl EternalBlue (MS17-010), garsaus WannaCry eksploato.",
+      "Devel": "Windows IIS su atviru anoniminiu FTP — aspx webshell įkėlimas ir eskalacija per MS11-046.",
+      "Jerry": "Tomcat serveris su numatytaisiais manager duomenimis, kenkėjiško WAR diegimas SYSTEM apvalkalui.",
+      "Bashed": "Atvertas phpbash suteikia www-data apvalkalą, tada eskalacija per blogai sukonfigūruotą cron."
+    }
+  },
   "Links": {
     "home": {
       "name": "Aš",
@@ -152,6 +177,10 @@
     "skills": {
       "name": "Įgūdžiai",
       "hash": "#skills"
+    },
+    "hackthebox": {
+      "name": "HackTheBox",
+      "hash": "#hackthebox"
     },
     "experience": {
       "name": "Patirtis",

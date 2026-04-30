@@ -25,6 +25,7 @@ export default function Intro() {
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
+            className="relative"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -32,6 +33,7 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
+            <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-br from-indigo-400 via-pink-400 to-amber-300 blur-md opacity-70 dark:opacity-60" />
             <Image
               src="https://dam.malt.com/2d1cd16c-4508-4ad9-99cc-62c6898be89e?gravity=face&func=face&face_margin=70&w=440&h=440&force_format=webp"
               alt="Anas"
@@ -39,7 +41,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl dark:border-gray-900"
             />
           </motion.div>
 
@@ -60,19 +62,24 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-6 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">{t("title.text1")}</span> {t("title.text2")}{" "}
-        <span className="font-bold">{t("title.text3g")}</span>{" "}
+        <span className="text-gradient font-bold">{t("title.text3g")}</span>{" "}
         {t("title.text4")}{" "}
-        <span className="font-bold">{t("title.text5g")}</span>{" "}
+        <span className="text-gradient font-bold">{t("title.text5g")}</span>{" "}
         {t("title.text6")} <span className="italic">{t("title.text7g")}</span>{" "}
         {t("title.text8")}{" "}
-        <span className="underline">{t("title.text9i")}</span>{" "}
+        <span className="underline decoration-pink-400/70 underline-offset-4">
+          {t("title.text9i")}
+        </span>{" "}
         {t("title.text10")}{" "}
-        <span className="underline">{t("title.text11i")}</span>.
+        <span className="underline decoration-indigo-400/70 underline-offset-4">
+          {t("title.text11i")}
+        </span>
+        .
       </motion.h1>
 
       <motion.div

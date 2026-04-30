@@ -12,6 +12,18 @@ const nextConfig = {
         protocol: "https",
         hostname: "dam.malt.com",
       },
+      {
+        protocol: "https",
+        hostname: "labs.hackthebox.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.hackthebox.com",
+      },
+      {
+        protocol: "https",
+        hostname: "hackthebox.com",
+      },
     ],
   },
 };

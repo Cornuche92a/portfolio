@@ -136,6 +136,31 @@
     "title": "Contactez-moi !",
     "desc": "Vous avez un projet en tête ou vous souhaitez simplement discuter ? N'hésitez pas à me contacter !"
   },
+  "HackTheBox": {
+    "title": "Machines HackTheBox",
+    "desc": "Voici les machines que j'ai piratées sur HackTheBox dans le cadre de mes entraînements en cybersécurité offensive.",
+    "badge": "Synchronisé avec l'API HackTheBox",
+    "userFlag": "User",
+    "rootFlag": "Root",
+    "defaultDescription": "Machine HackTheBox « {name} » compromise lors d'un exercice de pentest — reconnaissance, exploitation et élévation de privilèges jusqu'au flag root.",
+    "error": "Impossible de charger les machines HackTheBox pour le moment.",
+    "empty": "Aucune machine pwnée à afficher pour l'instant.",
+    "stats": {
+      "total": "Pwnées"
+    },
+    "showMore": "Voir plus",
+    "showAll": "Tout afficher",
+    "showLess": "Voir moins",
+    "showingCount": "{shown} / {total} machines affichées",
+    "descriptions": {
+      "Lame": "Machine d'initiation Linux exploitant une vulnérabilité Samba (CVE-2007-2447) permettant une exécution de commandes à distance en root.",
+      "Legacy": "Ancienne Windows XP vulnérable à MS08-067 et MS17-010 — un classique pour comprendre les exploits SMB.",
+      "Blue": "Windows 7 vulnérable à EternalBlue (MS17-010), l'exploit emblématique derrière WannaCry.",
+      "Devel": "Windows IIS laissant un FTP anonyme ouvert — upload d'un webshell aspx puis élévation via MS11-046.",
+      "Jerry": "Serveur Tomcat avec credentials managers par défaut, déploiement d'une WAR malveillante pour un shell SYSTEM.",
+      "Bashed": "Un phpbash exposé donne un shell www-data, puis élévation via une tâche cron mal configurée."
+    }
+  },
   "Links": {
     "home": {
       "name": "Moi",
@@ -152,6 +177,10 @@
     "skills": {
       "name": "Skills",
       "hash": "#skills"
+    },
+    "hackthebox": {
+      "name": "HackTheBox",
+      "hash": "#hackthebox"
     },
     "experience": {
       "name": "Expérience",
