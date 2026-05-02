@@ -76,7 +76,7 @@ export default function Project({
                 src={imageUrl}
                 width={560}
                 height={420}
-                alt={title}
+                alt={`Aperçu du projet ${title}`}
                 quality={95}
                 className="absolute left-6 top-1/2 w-[120%] max-w-none -translate-y-1/2 rounded-xl shadow-2xl transition duration-500
                   group-hover:scale-[1.04]
@@ -96,7 +96,7 @@ export default function Project({
                 src={imageUrl}
                 width={560}
                 height={420}
-                alt={title}
+                alt={`Aperçu du projet ${title}`}
                 quality={95}
                 className="absolute inset-x-6 top-4 w-[calc(100%-3rem)] rounded-lg shadow-xl"
               />

@@ -1,4 +1,15 @@
 {
+  "Metadata": {
+    "title": "Anas — Full-Stack JS Developer & Cybersecurity Consultant",
+    "titleTemplate": "%s | Anas — Full-Stack & CyberSec",
+    "description": "Portfolio of Anas, full-stack JavaScript developer (React, Next.js, Node.js) and cybersecurity consultant based in France. 2+ years of experience, freelance available.",
+    "keywords": "full-stack developer, freelance, Next.js, React, TypeScript, Node.js, cybersecurity consultant, pentest, HackTheBox, Anas, web developer, portfolio",
+    "ogTitle": "Anas — Full-Stack JS Developer & Cybersecurity Consultant",
+    "ogDescription": "Full-stack JavaScript developer & cybersecurity consultant. I design, build and secure modern web applications.",
+    "authorName": "Anas",
+    "jobTitle": "Full-Stack Developer & Cybersecurity Consultant",
+    "locale": "en_US"
+  },
   "Intro": {
     "title": {
       "text1": "Hi! It's Anas.",

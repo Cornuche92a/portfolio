@@ -35,11 +35,12 @@ export default function Intro() {
           <div className="absolute -inset-px -z-10 rounded-full bg-gradient-to-br from-indigo-500/50 via-pink-500/50 to-amber-400/50" />
           <Image
             src="https://dam.malt.com/2d1cd16c-4508-4ad9-99cc-62c6898be89e?gravity=face&func=face&face_margin=70&w=440&h=440&force_format=webp"
-            alt="Anas"
+            alt="Portrait d'Anas — Développeur Full-Stack JavaScript et Consultant Cybersécurité"
             width={192}
             height={192}
             quality={95}
             priority
+            fetchPriority="high"
             className="relative h-32 w-32 rounded-full border-[0.3rem] border-white object-cover shadow-2xl sm:h-36 sm:w-36 dark:border-[#111]"
           />
           <motion.span

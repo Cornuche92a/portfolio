@@ -404,7 +404,7 @@ function MachineVisual({ machine }: { machine: HtbMachine }) {
               {machine.avatar ? (
                 <Image
                   src={machine.avatar}
-                  alt={machine.name}
+                  alt={`Avatar de la machine HackTheBox ${machine.name}`}
                   width={40}
                   height={40}
                   className="h-8 w-8 rounded object-cover"
