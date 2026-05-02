@@ -1,4 +1,15 @@
 {
+  "Metadata": {
+    "title": "أنس — مطور Full-Stack JS ومستشار أمن سيبراني",
+    "titleTemplate": "%s | أنس — Full-Stack & CyberSec",
+    "description": "حافظة أعمال أنس، مطور JavaScript Full-Stack (React, Next.js, Node.js) ومستشار في الأمن السيبراني مقيم في فرنسا. خبرة تزيد عن سنتين، متاح للعمل الحر.",
+    "keywords": "مطور full-stack, عمل حر, Next.js, React, TypeScript, Node.js, مستشار أمن سيبراني, اختبار اختراق, HackTheBox, أنس, مطور ويب, حافظة أعمال",
+    "ogTitle": "أنس — مطور Full-Stack JS ومستشار أمن سيبراني",
+    "ogDescription": "مطور JavaScript Full-Stack ومستشار أمن سيبراني. أصمم وأطور وأُؤمّن تطبيقات الويب الحديثة.",
+    "authorName": "Anas",
+    "jobTitle": "مطور Full-Stack ومستشار أمن سيبراني",
+    "locale": "ar_SA"
+  },
   "Intro": {
     "title": {
       "text1": "مرحبًا! أنا أنس.",

@@ -1,4 +1,15 @@
 {
+  "Metadata": {
+    "title": "Anas — Full-Stack JS Programuotojas ir Kibernetinio Saugumo Konsultantas",
+    "titleTemplate": "%s | Anas — Full-Stack & CyberSec",
+    "description": "Anas portfolio, full-stack JavaScript programuotojas (React, Next.js, Node.js) ir kibernetinio saugumo konsultantas Prancūzijoje. 2+ metų patirtis, laisvas laisvai samdomam darbui.",
+    "keywords": "full-stack programuotojas, freelance, Next.js, React, TypeScript, Node.js, kibernetinio saugumo konsultantas, pentest, HackTheBox, Anas, web kūrėjas, portfolio",
+    "ogTitle": "Anas — Full-Stack JS Programuotojas ir Kibernetinio Saugumo Konsultantas",
+    "ogDescription": "Full-stack JavaScript programuotojas ir kibernetinio saugumo konsultantas. Kuriu, plėtoju ir užtikrinu šiuolaikinių interneto programų saugumą.",
+    "authorName": "Anas",
+    "jobTitle": "Full-Stack Programuotojas ir Kibernetinio Saugumo Konsultantas",
+    "locale": "lt_LT"
+  },
   "Intro": {
     "title": {
       "text1": "Sveiki! Aš esu Anas.",
