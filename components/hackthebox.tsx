@@ -122,7 +122,7 @@ export default function HackTheBox() {
       ref={ref}
       className="mb-28 w-full max-w-[72rem] scroll-mt-28 sm:mb-40"
     >
-      <SectionHeading>{t("title")}</SectionHeading>
+      <SectionHeading eyebrow="// cybersecurity">{t("title")}</SectionHeading>
 
       <motion.p
         className="mx-auto -mt-2 mb-6 max-w-[40rem] text-center text-gray-700 dark:text-white/70"

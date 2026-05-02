@@ -42,32 +42,56 @@ export default function Experience() {
   }));
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>Mon expérience</SectionHeading>
+    <section
+      id="experience"
+      ref={ref}
+      className="mb-28 w-full max-w-[62rem] scroll-mt-28 sm:mb-40"
+    >
+      <SectionHeading eyebrow="// experience">Mon expérience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experienceArray.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
                 background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
+                  theme === "light"
+                    ? "rgba(255, 255, 255, 0.7)"
+                    : "rgba(255, 255, 255, 0.035)",
+                boxShadow:
+                  theme === "light"
+                    ? "0 10px 30px -10px rgba(15,15,25,0.08)"
+                    : "0 10px 30px -10px rgba(0,0,0,0.5)",
+                border:
+                  theme === "light"
+                    ? "1px solid rgba(15, 15, 25, 0.08)"
+                    : "1px solid rgba(255, 255, 255, 0.08)",
                 textAlign: "left",
-                padding: "1.3rem 2rem",
+                padding: "1.4rem 2rem",
+                borderRadius: "1rem",
+                backdropFilter: "blur(10px)",
               }}
               contentArrowStyle={{
                 borderRight:
                   theme === "light"
-                    ? "0.4rem solid #9ca3af"
-                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
+                    ? "0.4rem solid rgba(255, 255, 255, 0.8)"
+                    : "0.4rem solid rgba(255, 255, 255, 0.08)",
               }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
                 background:
-                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
-                fontSize: "1.5rem",
+                  theme === "light"
+                    ? "white"
+                    : "rgba(255, 255, 255, 0.08)",
+                border:
+                  theme === "light"
+                    ? "1px solid rgba(15, 15, 25, 0.08)"
+                    : "1px solid rgba(255, 255, 255, 0.1)",
+                boxShadow:
+                  theme === "light"
+                    ? "0 4px 12px -4px rgba(99, 102, 241, 0.25)"
+                    : "0 4px 12px -4px rgba(0, 0, 0, 0.5)",
+                fontSize: "1.4rem",
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
