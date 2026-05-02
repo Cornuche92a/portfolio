@@ -22,12 +22,16 @@ export default function Projects() {
   const projectsArray: ProjectProps[] = Object.values(projectsObject); // Convert the object to an array
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <SectionHeading>{t("title")}</SectionHeading>
+    <section
+      ref={ref}
+      id="projects"
+      className="mb-28 w-full max-w-[62rem] scroll-mt-28 sm:mb-40"
+    >
+      <SectionHeading eyebrow="// projects">{t("title")}</SectionHeading>
       <div>
         {projectsArray.map((project, index) => (
           <React.Fragment key={index}>
-            <Project key={index} {...(project as ProjectProps)} />{" "}
+            <Project key={index} {...(project as ProjectProps)} />
           </React.Fragment>
         ))}
       </div>

@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
+import { BsArrowUpRight } from "react-icons/bs";
 
 type ProjectProps = {
   title: string;
@@ -25,8 +26,8 @@ export default function Project({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
     <motion.div
@@ -35,19 +36,31 @@ export default function Project({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group mb-6 sm:mb-10 last:mb-0"
     >
-      <section className="bg-white/70 max-w-[42rem] border border-black/5 rounded-2xl overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-white/90 backdrop-blur-md shadow-sm hover:shadow-lg transition sm:group-even:pl-8 dark:text-white dark:bg-white/[0.04] dark:border-white/10 dark:hover:bg-white/[0.08]">
-        <Link href={link} target={"_blank"}>
-          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-            <h3 className="text-2xl font-semibold">{title}</h3>
-            <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+      <Link href={link} target="_blank" className="block">
+        <section className="shine relative flex flex-col overflow-hidden rounded-3xl border border-[color:var(--line)] bg-white/60 shadow-sm backdrop-blur-md transition duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/10 sm:h-[22rem] sm:flex-row sm:group-even:flex-row-reverse dark:bg-white/[0.035]">
+          <div className="flex flex-1 flex-col justify-center px-6 pb-6 pt-6 sm:px-10 sm:py-10">
+            <div className="mb-4 flex items-center gap-2">
+              <span className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-gray-500 dark:text-white/50">
+                Case study
+              </span>
+              <span className="h-px flex-1 bg-gradient-to-r from-[color:var(--line)] to-transparent" />
+            </div>
+
+            <h3 className="flex items-start gap-2 text-2xl font-semibold tracking-tight sm:text-3xl">
+              <span className="flex-1">{title}</span>
+              <BsArrowUpRight className="mt-1 shrink-0 text-base text-gray-400 transition duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-indigo-500 dark:text-white/40" />
+            </h3>
+
+            <p className="mt-3 text-sm leading-relaxed text-gray-700 sm:text-base dark:text-white/70">
               {desc}
             </p>
-            <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+
+            <ul className="mt-5 flex flex-wrap gap-2">
               {tags.map((tag, index) => (
                 <li
-                  className="bg-gray-900/90 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full shadow-sm dark:bg-white/10 dark:text-white/80"
+                  className="rounded-full border border-[color:var(--line)] bg-white/70 px-3 py-1 font-mono text-[0.68rem] uppercase tracking-wider text-gray-700 backdrop-blur-sm transition group-hover:border-indigo-300/50 dark:bg-white/[0.03] dark:text-white/70"
                   key={index}
                 >
                   {tag}
@@ -57,28 +70,40 @@ export default function Project({
           </div>
 
           {imageUrl && (
-            <Image
-              src={imageUrl}
-              width={400}
-              height={300}
-              alt="Project I worked on"
-              quality={95}
-              className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-                transition
-                group-hover:scale-[1.04]
-                group-hover:-translate-x-3
-                group-hover:translate-y-3
-                group-hover:-rotate-2
-
-                group-even:group-hover:translate-x-3
-                group-even:group-hover:translate-y-3
-                group-even:group-hover:rotate-2
-
-                group-even:right-[initial] group-even:-left-40"
-            />
+            <div className="relative hidden w-[46%] shrink-0 overflow-hidden sm:block">
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-pink-500/5 to-amber-500/10" />
+              <Image
+                src={imageUrl}
+                width={560}
+                height={420}
+                alt={title}
+                quality={95}
+                className="absolute left-6 top-1/2 w-[120%] max-w-none -translate-y-1/2 rounded-xl shadow-2xl transition duration-500
+                  group-hover:scale-[1.04]
+                  group-hover:-translate-y-[52%]
+                  group-hover:-rotate-1
+                  group-even:left-[initial]
+                  group-even:right-6
+                  group-even:group-hover:rotate-1"
+              />
+            </div>
           )}
-        </Link>
-      </section>
+
+          {imageUrl && (
+            <div className="relative h-48 w-full overflow-hidden sm:hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-pink-500/5 to-amber-500/10" />
+              <Image
+                src={imageUrl}
+                width={560}
+                height={420}
+                alt={title}
+                quality={95}
+                className="absolute inset-x-6 top-4 w-[calc(100%-3rem)] rounded-lg shadow-xl"
+              />
+            </div>
+          )}
+        </section>
+      </Link>
     </motion.div>
   );
 }

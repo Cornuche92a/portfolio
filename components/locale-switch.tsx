@@ -42,7 +42,7 @@ export default function LocaleSwitch() {
         aria-haspopup="listbox"
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        className="bg-white w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 text-xl"
+        className="inline-flex h-[3rem] w-[3rem] items-center justify-center rounded-full border border-[color:var(--line)] bg-white/80 text-xl shadow-lg backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-xl dark:bg-white/[0.06] dark:hover:border-white/20"
       >
         {current.flag}
       </button>
@@ -50,7 +50,7 @@ export default function LocaleSwitch() {
       {open && (
         <ul
           role="listbox"
-          className="absolute bottom-[3.5rem] right-0 min-w-[12rem] rounded-2xl bg-white bg-opacity-95 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl overflow-hidden dark:bg-gray-950 dark:border-black/40"
+          className="absolute bottom-[3.5rem] right-0 min-w-[12rem] overflow-hidden rounded-2xl border border-[color:var(--line)] bg-white/95 shadow-2xl backdrop-blur dark:bg-[#111]/95"
         >
           {routing.locales.map((locale) => {
             const { label, flag } = LOCALE_LABELS[locale];
