@@ -313,12 +313,12 @@ function MachineCard({
         <MachineVisual machine={machine} />
 
         <div className="flex flex-1 flex-col px-5 pb-5 pt-4 sm:px-6 sm:pb-6 sm:pt-5">
-          <div className="flex items-center gap-2">
-            <h3 className="text-xl font-semibold sm:text-2xl">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <h3 className="min-w-0 break-words text-xl font-semibold sm:text-2xl">
               {machine.name}
             </h3>
             <span
-              className={`rounded-full border border-current/20 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wider ${difficultyAccentText(
+              className={`shrink-0 rounded-full border border-current/20 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wider ${difficultyAccentText(
                 machine.difficulty
               )}`}
             >
